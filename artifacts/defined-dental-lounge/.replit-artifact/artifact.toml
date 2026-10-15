@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Defined Dental Lounge"
+description = "A welcoming, refined website for Defined Dental Lounge, helping patients explore dental services and request an appointment."
+version = "1.0.0"
+id = "artifacts/defined-dental-lounge"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25307
+
+[services.development]
+run = "pnpm --filter @workspace/defined-dental-lounge run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/defined-dental-lounge", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/defined-dental-lounge/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25307"
+BASE_PATH = "/"
