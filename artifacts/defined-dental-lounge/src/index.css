@@ -336,7 +336,7 @@ body { margin: 0; background: var(--paper); }
 .site-shell { overflow: hidden; }
 .topbar { height: 84px; padding: 0 6.3vw; display:flex; align-items:center; justify-content:space-between; background:#f2efe6; position:relative; z-index:4; }
 .brand { display:flex; align-items:center; gap:13px; color:var(--olive); text-decoration:none; }
-.brand-mark { width:35px;height:40px; }
+.brand-mark { width:40px;height:40px;object-fit:cover;border:1px solid rgba(167,142,94,.35); }
 .brand-name { font-family:var(--serif); font-size:19px; letter-spacing:.16em; line-height:1.05; }
 .brand-name span { display:block; font:500 8px var(--app-font-sans); letter-spacing:.34em; margin-top:5px; }
 .nav-links { display:flex; gap:38px; align-items:center; }
@@ -381,7 +381,7 @@ body { margin: 0; background: var(--paper); }
 .service-row p { font-size:12px; line-height:1.7; color:#737667; margin:0; max-width:420px; }
 .service-icon { width:26px;height:26px;color:#8c784f; }
 .care-band { display:grid; grid-template-columns:1fr 1fr; background:#303923; color:#f2efe6; min-height:530px; }
-.care-art { min-height:450px; position:relative; background:linear-gradient(180deg,transparent 45%,rgba(30,37,25,.28)),url('/detail.jpg') center/cover; }
+.care-art { min-height:450px; position:relative; background:#252d20 url('/defined-dental-logo.webp') center/contain no-repeat; }
 .care-art:after { content:"";position:absolute;inset:23px;border:1px solid rgba(220,199,149,.52); }
 .care-copy { padding:90px clamp(45px,8vw,130px); align-self:center; }
 .care-copy h2 { color:#f2efe6; font:500 clamp(39px,4vw,58px)/1.1 var(--serif); margin:19px 0 23px; }
@@ -438,7 +438,7 @@ body { margin: 0; background: var(--paper); }
  .intro-grid {gap:6vw}.care-copy {padding:60px 7vw}.appointment-layout,.faq {gap:6vw}
 }
 @media(max-width:620px) {
- .topbar {height:70px;padding:0 5vw}.brand-mark{width:30px}.brand-name{font-size:16px}.mobile-menu{display:block}.nav-links {display:none;position:absolute;top:70px;left:0;right:0;background:#f2efe6;padding:18px 7vw 25px;box-shadow:0 12px 20px rgba(38,48,32,.08);align-items:stretch;gap:18px;flex-direction:column}.nav-links.is-open{display:flex}.nav-links a:not(.nav-cta){display:block;font-size:12px}.nav-cta{font-size:9px!important;padding:10px 12px!important;align-self:flex-start}
+ .topbar {height:70px;padding:0 5vw}.brand-mark{width:34px;height:34px}.brand-name{font-size:16px}.mobile-menu{display:block}.nav-links {display:none;position:absolute;top:70px;left:0;right:0;background:#f2efe6;padding:18px 7vw 25px;box-shadow:0 12px 20px rgba(38,48,32,.08);align-items:stretch;gap:18px;flex-direction:column}.nav-links.is-open{display:flex}.nav-links a:not(.nav-cta){display:block;font-size:12px}.nav-cta{font-size:9px!important;padding:10px 12px!important;align-self:flex-start}
  .hero-copy {padding:72px 7vw 45px}.hero h1 {font-size:clamp(52px,15vw,76px)}.hero-intro{font-size:13px}.hero-actions{gap:18px;flex-wrap:wrap}.button-gold{padding:15px 17px}.hero-image{height:300px;margin:0 0 19px 18vw}.hero-seal{width:82px;height:82px;font-size:14px;right:6vw;bottom:43px}
  .marquee {padding:13px 0;font-size:14px}.marquee span{margin:0 17px}
  .section,.services,.process,.appointment,.faq{padding:70px 7vw}

@@ -1,18 +1,14 @@
 import { useState, type FormEvent } from 'react';
 import { ArrowRight, Sparkles, ScanLine, Smile, ShieldCheck, MoveUpRight } from 'lucide-react';
 
-function Mark({ light = false }: { light?: boolean }) {
+function Mark() {
   return (
-    <svg className="brand-mark" viewBox="0 0 46 54" fill="none" aria-hidden="true">
-      <path d="M23 4C14 4 7 9.6 7 19.1c0 10.9 5.2 26.8 10.2 29.1 3.1 1.4 4.2-10.6 8-15.1 3.5-4.1 4.2 15.1 8.2 15.1 5.2 0 10.5-18.2 10.5-29.1C43.9 9.8 35.2 4 23 4Z" stroke={light ? '#d6be8b' : '#947742'} strokeWidth="1.5" />
-      <path d="M12 14.5c4.3-7 15-8.6 22.7-2.3C29.1 10.3 19.7 13 12 29.4c-1-6.4-1-11.1 0-14.9Z" fill={light ? '#d6be8b' : '#947742'} />
-      <path d="M18.5 48.4c5.6-1.6 9.3-14 11.8-21.1 2.5-7.2 5.9-11.4 9.6-13.6" stroke={light ? '#d6be8b' : '#947742'} strokeWidth="1.15" />
-    </svg>
+    <img className="brand-mark" src="/tooth-mark.webp" alt="" aria-hidden="true" />
   );
 }
 
 function Brand({ light = false }: { light?: boolean }) {
-  return <div className="brand" aria-label="Defined Dental Lounge"><Mark light={light} /><div className="brand-name">DEFINED<span>DENTAL LOUNGE</span></div></div>;
+  return <div className="brand" aria-label="Defined Dental Lounge"><Mark /><div className="brand-name">DEFINED<span>DENTAL LOUNGE</span></div></div>;
 }
 
 function Home() {
@@ -83,7 +79,7 @@ function Home() {
       </section>
 
       <section className="care-band">
-        <div className="care-art" role="img" aria-label="Natural light across a sculptural limestone and botanical arrangement" />
+        <div className="care-art" role="img" aria-label="Defined Dental Lounge gold tooth emblem and brand artwork" />
         <div className="care-copy">
           <div className="section-label">A note on comfort</div>
           <h2>Nothing about<br />your care should<br /><em>feel routine.</em></h2>
