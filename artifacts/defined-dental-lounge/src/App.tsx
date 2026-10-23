@@ -79,16 +79,6 @@ function Home() {
         </div>
       </section>
 
-      <section className="care-band">
-        <div className="care-art" role="img" aria-label="Defined Dental Lounge gold tooth emblem and brand artwork" />
-        <div className="care-copy">
-          <div className="section-label">A note on comfort</div>
-          <h2>Nothing about<br />your care should<br /><em>feel routine.</em></h2>
-          <p>From the first conversation to the details of a care plan, we make space for questions and explain the why behind each recommendation. You stay part of every decision.</p>
-          <div className="care-points"><div>Clear conversations</div><div>Personalised planning</div><div>Time to consider</div><div>Care, without pressure</div></div>
-        </div>
-      </section>
-
       <section className="process" id="visit">
         <div className="process-heading"><div><div className="section-label">03 — Your first visit</div><h2 className="section-title">Start with a<br />conversation.</h2></div><a className="text-link" href="#request" style={{ color: '#414a37' }}>Request a first visit <ArrowRight size={13} /></a></div>
         <div className="steps">

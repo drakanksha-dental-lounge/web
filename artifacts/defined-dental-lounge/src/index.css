@@ -386,14 +386,6 @@ body { margin: 0; background: var(--paper); }
 .service-row h3 { font:500 25px var(--serif); color:#303923; margin:0; }
 .service-row p { font-size:12px; line-height:1.7; color:#737667; margin:0; max-width:420px; }
 .service-icon { width:26px;height:26px;color:#8c784f; }
-.care-band { display:grid; grid-template-columns:1fr 1fr; background:#303923; color:#f2efe6; min-height:530px; }
-.care-art { min-height:450px; position:relative; background:#252d20 url('/defined-dental-logo.webp') center/contain no-repeat; }
-.care-art:after { content:"";position:absolute;inset:23px;border:1px solid rgba(220,199,149,.52); }
-.care-copy { padding:90px clamp(45px,8vw,130px); align-self:center; }
-.care-copy h2 { color:#f2efe6; font:500 clamp(39px,4vw,58px)/1.1 var(--serif); margin:19px 0 23px; }
-.care-copy p { color:#c9ccbe; font-size:13px; line-height:1.95; max-width:440px; }
-.care-points { display:grid; grid-template-columns:1fr 1fr; gap:17px 22px; margin:33px 0 0; }
-.care-points div { border-top:1px solid #68705c; padding-top:13px; font:italic 15px var(--serif); color:#d8c498; }
 .process { padding:125px 10vw; }
 .process-heading { display:flex; justify-content:space-between; align-items:end; margin-bottom:60px; }
 .process-heading .section-title { max-width:520px; }
@@ -444,7 +436,7 @@ body { margin: 0; background: var(--paper); }
  .topbar { padding:0 6vw;height:74px; }.nav-links {gap:19px}.nav-links a {font-size:10px}.nav-cta {padding:11px 14px!important}
  .hero {height:auto;min-height:0;grid-template-columns:1fr}.hero-copy {padding:90px 9vw 55px}.hero h1 {font-size:clamp(56px,12vw,88px)}.hero-image {height:370px;margin:0 6vw 25px 23vw;background-position:center 48%}.hero-seal {right:8vw;bottom:56px}.hero-index {display:none}
  .section,.services,.process,.appointment,.faq {padding:83px 8vw}
- .intro-grid {gap:6vw}.care-copy {padding:60px 7vw}.appointment-layout,.faq {gap:6vw}
+  .intro-grid {gap:6vw}.appointment-layout,.faq {gap:6vw}
 }
 @media(max-width:760px) {
   .topbar {height:70px;padding:0 5vw}.brand-mark{width:34px;height:34px}.brand-name{font-size:16px}.header-phone{font-size:10px;gap:5px}.mobile-menu{display:block}.nav-links {display:none;position:absolute;top:70px;left:0;right:0;background:#f2efe6;padding:18px 7vw 25px;box-shadow:0 12px 20px rgba(38,48,32,.08);align-items:stretch;gap:18px;flex-direction:column}.nav-links.is-open{display:flex}.nav-links a:not(.nav-cta){display:block;font-size:12px}.nav-cta{font-size:9px!important;padding:10px 12px!important;align-self:flex-start}
@@ -453,10 +445,9 @@ body { margin: 0; background: var(--paper); }
  .hero-copy {padding:72px 7vw 45px}.hero h1 {font-size:clamp(52px,15vw,76px)}.hero-intro{font-size:13px}.hero-actions{gap:18px;flex-wrap:wrap}.button-gold{padding:15px 17px}.hero-image{height:300px;margin:0 0 19px 18vw}.hero-seal{width:82px;height:82px;font-size:14px;right:6vw;bottom:43px}
  .marquee {padding:13px 0;font-size:14px}.marquee span{margin:0 17px}
  .section,.services,.process,.appointment,.faq{padding:70px 7vw}
- .intro-grid,.care-band,.appointment-layout,.faq {grid-template-columns:1fr}.intro-grid{gap:27px}.intro-grid h2,.section-title{font-size:42px}
+  .intro-grid,.appointment-layout,.faq {grid-template-columns:1fr}.intro-grid{gap:27px}.intro-grid h2,.section-title{font-size:42px}
  .service-head,.process-heading{display:block}.service-head p{margin-top:18px}.service-head{margin-bottom:35px}.process-heading .text-link{margin-top:22px}
  .service-row{grid-template-columns:38px 1fr 24px;gap:13px;padding:21px 0}.service-row h3{font-size:21px}.service-row p{grid-column:2;grid-row:2}.service-icon{grid-column:3;grid-row:1}
- .care-art{min-height:310px}.care-copy{padding:60px 8vw}.care-points{gap:15px}
  .steps{grid-template-columns:1fr;gap:30px}.step{padding-top:15px}.step h3{margin:15px 0 8px}.step p{max-width:none}
  .appointment-layout{gap:35px}.appointment-copy h2{font-size:49px}.request-form{grid-template-columns:1fr}.field.full,.request-form .button-gold,.request-status{grid-column:1}
  .faq{gap:25px}.faq h2{font-size:43px}
