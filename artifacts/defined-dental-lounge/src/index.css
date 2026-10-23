@@ -425,6 +425,9 @@ body { margin: 0; background: var(--paper); }
 .footer-note { color:#adb19f; max-width:270px; font:italic 18px/1.5 var(--serif); }
 .footer-nav { display:flex; gap:29px; flex-wrap:wrap; }
 .footer-nav a { text-decoration:none; color:#d3d2c4; font-size:10px; letter-spacing:.1em; }
+.footer-contact { display:flex; justify-content:flex-end; gap:28px; padding:17px 0; border-bottom:1px solid #515746; color:#d3d2c4; font-size:10px; letter-spacing:.08em; }
+.footer-contact a { color:inherit; text-decoration:none; }
+.footer-contact a:hover { color:#d8c498; }
 .footer-bottom { padding-top:20px; display:flex; justify-content:space-between; color:#939987; font-size:9px; letter-spacing:.08em; }
 .mobile-menu { display:none; }
 .mobile-menu { border:0; background:transparent; color:#303923; font:600 10px var(--app-font-sans); letter-spacing:.15em; text-transform:uppercase; cursor:pointer; }
@@ -449,7 +452,7 @@ body { margin: 0; background: var(--paper); }
  .steps{grid-template-columns:1fr;gap:30px}.step{padding-top:15px}.step h3{margin:15px 0 8px}.step p{max-width:none}
  .appointment-layout{gap:35px}.appointment-copy h2{font-size:49px}.request-form{grid-template-columns:1fr}.field.full,.request-form .button-gold,.request-status{grid-column:1}
  .faq{gap:25px}.faq h2{font-size:43px}
- .footer{padding:48px 7vw 25px}.footer-top{display:grid;gap:28px;padding-bottom:35px}.footer-nav{gap:19px}.footer-bottom{gap:10px;flex-direction:column}
+  .footer{padding:48px 7vw 25px}.footer-top{display:grid;gap:28px;padding-bottom:35px}.footer-nav{gap:19px}.footer-contact{justify-content:flex-start;flex-direction:column;gap:11px}.footer-bottom{gap:10px;flex-direction:column}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
 

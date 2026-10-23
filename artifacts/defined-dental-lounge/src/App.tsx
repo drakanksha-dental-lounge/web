@@ -123,7 +123,7 @@ function Home() {
           <details className="faq-item"><summary>What should I include in my request?</summary><p>A short note about what you’d like to discuss is a helpful place to begin. Please avoid including sensitive medical or financial information here.</p></details>
           <details className="faq-item"><summary>Does submitting this form book an appointment?</summary><p>No. This page has no booking system and does not send information to the clinic. It only displays a local reminder that your request details are ready.</p></details>
           <details className="faq-item"><summary>What if I’m feeling nervous about dental care?</summary><p>You’re welcome to say so in your request. A first conversation can be a chance to share concerns and understand what to expect, without pressure to decide anything.</p></details>
-          <details className="faq-item"><summary>Where is the clinic and when is it open?</summary><p>Clinic location, contact details, and opening hours have not been provided on this page. Please confirm those details directly with the clinic before planning a visit.</p></details>
+          <details className="faq-item"><summary>Where is the clinic and when is it open?</summary><p>Defined Dental Lounge is in Kondapur, Hyderabad. Call us at <a href="tel:8121087111">81210 87111</a> to confirm opening hours.</p></details>
         </div>
       </section>
 
@@ -132,6 +132,10 @@ function Home() {
           <Brand light />
           <div className="footer-note">Diagnose. Design.<br />Deliver with care.</div>
           <nav className="footer-nav" aria-label="Footer navigation"><a href="#approach">OUR APPROACH</a><a href="#care">CARE</a><a href="#visit">FIRST VISIT</a><a href="#request">REQUEST</a></nav>
+        </div>
+        <div className="footer-contact" aria-label="Clinic contact details">
+          <a href="tel:8121087111">Call 81210 87111</a>
+          <span>Kondapur, Hyderabad</span>
         </div>
         <div className="footer-bottom"><span>DEFINED DENTAL LOUNGE</span><span>Thoughtful care, by design.</span><a href="#home" aria-label="Back to top" style={{ color: 'inherit' }}>BACK TO TOP <MoveUpRight size={11} /></a></div>
       </footer>
