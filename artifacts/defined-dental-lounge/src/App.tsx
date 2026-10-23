@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from 'react';
-import { ArrowRight, Sparkles, ScanLine, Smile, ShieldCheck, MoveUpRight } from 'lucide-react';
+import { ArrowRight, Sparkles, ScanLine, Smile, ShieldCheck, MoveUpRight, Phone } from 'lucide-react';
 
 function Mark() {
   return (
@@ -28,6 +28,7 @@ function Home() {
     <main className="site-shell">
       <header className="topbar">
         <a href="#home" className="brand" aria-label="Defined Dental Lounge home"><Brand /></a>
+        <a className="header-phone" href="tel:8121087111" aria-label="Call Defined Dental Lounge at 81210 87111"><Phone size={14} strokeWidth={1.7} /><span>81210 87111</span></a>
         <button className="mobile-menu" aria-label={menuOpen ? 'Close navigation' : 'Open navigation'} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)} data-testid="button-mobile-menu">{menuOpen ? 'Close' : 'Menu'}</button>
         <nav className={`nav-links ${menuOpen ? 'is-open' : ''}`} aria-label="Main navigation">
           <a href="#approach" onClick={closeMenu}>Our approach</a>
