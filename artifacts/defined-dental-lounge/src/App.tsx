@@ -3,7 +3,7 @@ import { ArrowRight, Sparkles, ScanLine, Smile, ShieldCheck, MoveUpRight, Phone 
 
 function Mark() {
   return (
-    <img className="brand-mark" src="/tooth-emblem-transparent.png" width={40} height={40} alt="" aria-hidden="true" />
+    <img className="brand-mark" src={`${import.meta.env.BASE_URL}tooth-emblem-transparent.png`} width={40} height={40} alt="" aria-hidden="true" />
   );
 }
 

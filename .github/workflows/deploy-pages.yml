@@ -1,0 +1,48 @@
+name: Deploy website to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.30.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Install website dependencies
+        run: pnpm --filter @workspace/defined-dental-lounge... install --frozen-lockfile
+      - name: Build website
+        run: pnpm --filter @workspace/defined-dental-lounge build
+        env:
+          PORT: '5173'
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}/
+      - name: Upload built website
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: artifacts/defined-dental-lounge/dist/public
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
