@@ -29,10 +29,6 @@ jobs:
         with:
           node-version: 24
           cache: pnpm
-      - name: Use GitHub Actions for Pages
-        run: gh api --method PUT "repos/${GITHUB_REPOSITORY}/pages" -f build_type=workflow
-        env:
-          GH_TOKEN: ${{ github.token }}
       - name: Configure Pages
         id: pages
         uses: actions/configure-pages@v5
