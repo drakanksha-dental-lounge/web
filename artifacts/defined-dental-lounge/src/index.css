@@ -387,7 +387,7 @@ body { margin: 0; background: var(--paper); }
 .doctor-registration { align-self:end; font-size:9px; letter-spacing:.07em; line-height:1.8; text-align:right; }
 .doctor-registration strong { display:block; color:#47503f; font-size:13px; font-weight:500; }
 .doctor-biography h2 { font:500 clamp(38px,4.3vw,64px)/1.12 var(--serif); letter-spacing:-.035em; color:#303923; margin:19px 0 18px; }
-.doctor-biography h2 em { color:#8a7148; font-weight:500; }
+.doctor-biography h2 em { display:inline-block; white-space:nowrap; font-size:clamp(26px,3.6vw,54px); color:#8a7148; font-weight:500; }
 .doctor-biography p { color:#636b56; font-size:13px; line-height:1.9; margin:0 0 17px; }
 .doctor-biography .doctor-qualification { color:#47503f; font-size:10px; letter-spacing:.12em; text-transform:uppercase; padding-bottom:22px; margin-bottom:22px; border-bottom:1px solid #c9c1ad; }
 .doctor-contact-link { color:#414a37; margin-top:7px; }
@@ -477,6 +477,7 @@ body { margin: 0; background: var(--paper); }
  .doctor-introduction { grid-template-columns:1fr; gap:36px; }
  .doctor-portrait { max-width:430px; width:100%; margin:0 auto; }
  .doctor-biography h2 { font-size:clamp(38px,7vw,54px); }
+ .doctor-biography h2 em { font-size:clamp(26px,7.6vw,52px); }
  .doctor-details { margin-top:38px; }
 }
 @media(max-width:620px) {

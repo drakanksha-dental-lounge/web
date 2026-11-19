@@ -35,7 +35,7 @@ export function DoctorProfile() {
 
         <div className="doctor-biography">
           <div className="section-label">02 — Meet your dentist</div>
-          <h2 id="doctor-heading">Meet Dr.<br /><em>Akanksha Priya.</em></h2>
+          <h2 id="doctor-heading">Meet<br /><em>Dr. Akanksha Priya.</em></h2>
           <p className="doctor-qualification">BDS · Dental Surgeon &amp; Consultant</p>
           <p>Dr. Akanksha Priya is an experienced dental professional with over 15 years of experience spanning clinical dentistry, patient care, clinic management, and healthcare operations. Her professional journey across dental clinics, multispecialty hospitals, and healthcare organisations has shaped her comprehensive approach to dentistry—one that combines clinical expertise, ethical practice, effective communication, and a deep commitment to patient wellbeing.</p>
           <p>A graduate of Buddha Institute of Dental Sciences and Hospital, Magadh University, Patna, Dr. Akanksha has built her career around the belief that good dentistry goes beyond treating a dental problem. It begins with understanding the patient, identifying the underlying concern, explaining treatment options clearly, and developing a personalised plan that prioritises long-term oral health.</p>
