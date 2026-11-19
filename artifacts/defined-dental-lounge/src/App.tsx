@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from 'react';
 import { ArrowRight, Sparkles, ScanLine, Smile, ShieldCheck, MoveUpRight, Phone } from 'lucide-react';
+import { DoctorProfile } from '@/components/doctor-profile';
 
 function Mark() {
   return (
@@ -32,6 +33,7 @@ function Home() {
         <button className="mobile-menu" aria-label={menuOpen ? 'Close navigation' : 'Open navigation'} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)} data-testid="button-mobile-menu">{menuOpen ? 'Close' : 'Menu'}</button>
         <nav className={`nav-links ${menuOpen ? 'is-open' : ''}`} aria-label="Main navigation">
           <a href="#approach" onClick={closeMenu}>Our approach</a>
+          <a href="#doctor" onClick={closeMenu}>Meet your dentist</a>
           <a href="#care" onClick={closeMenu}>Care</a>
           <a href="#visit" onClick={closeMenu}>Your first visit</a>
           <a className="nav-cta" href="#request" onClick={closeMenu}>Request a visit <ArrowRight size={13} /></a>
@@ -66,9 +68,11 @@ function Home() {
         </div>
       </section>
 
+      <DoctorProfile />
+
       <section className="services" id="care">
         <div className="service-head">
-          <div><div className="section-label">02 — Thoughtful dentistry</div><h2 className="section-title">Care for the whole<br />picture.</h2></div>
+          <div><div className="section-label">03 — Thoughtful dentistry</div><h2 className="section-title">Care for the whole<br />picture.</h2></div>
           <p>Every smile has its own story. Explore the kinds of care we can discuss together, then tell us what matters most to you.</p>
         </div>
         <div className="service-grid">
@@ -80,7 +84,7 @@ function Home() {
       </section>
 
       <section className="process" id="visit">
-        <div className="process-heading"><div><div className="section-label">03 — Your first visit</div><h2 className="section-title">Start with a<br />conversation.</h2></div><a className="text-link" href="#request" style={{ color: '#414a37' }}>Request a first visit <ArrowRight size={13} /></a></div>
+        <div className="process-heading"><div><div className="section-label">04 — Your first visit</div><h2 className="section-title">Start with a<br />conversation.</h2></div><a className="text-link" href="#request" style={{ color: '#414a37' }}>Request a first visit <ArrowRight size={13} /></a></div>
         <div className="steps">
           <article className="step"><span className="step-num">01 / Tell us</span><h3>What brings you here?</h3><p>Share what you’re looking for and any questions you’d like to bring along. There’s no need to have it all figured out.</p></article>
           <article className="step"><span className="step-num">02 / Take a look</span><h3>Understand the picture</h3><p>We’ll learn about your oral health and listen to what matters to you before talking through possible next steps.</p></article>
@@ -91,7 +95,7 @@ function Home() {
       <section className="appointment" id="request">
         <div className="appointment-layout">
           <div className="appointment-copy">
-            <div className="section-label">04 — Start here</div>
+            <div className="section-label">05 — Start here</div>
             <h2>Let’s begin<br />with a hello.</h2>
             <p>Share a few details and what you’re hoping to discuss. This form helps you prepare a request on this device.</p>
             <div className="request-note">This is not sent to the clinic and does not confirm an appointment. No booking or clinic contact service is connected here.</div>
@@ -122,7 +126,7 @@ function Home() {
         <div className="footer-top">
           <Brand light />
           <div className="footer-note">Diagnose. Design.<br />Deliver with care.</div>
-          <nav className="footer-nav" aria-label="Footer navigation"><a href="#approach">OUR APPROACH</a><a href="#care">CARE</a><a href="#visit">FIRST VISIT</a><a href="#request">REQUEST</a></nav>
+          <nav className="footer-nav" aria-label="Footer navigation"><a href="#approach">OUR APPROACH</a><a href="#doctor">MEET YOUR DENTIST</a><a href="#care">CARE</a><a href="#visit">FIRST VISIT</a><a href="#request">REQUEST</a></nav>
         </div>
         <div className="footer-contact" aria-label="Clinic contact details">
           <a href="tel:8121087111">Call 81210 87111</a>
